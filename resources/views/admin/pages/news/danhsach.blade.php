@@ -1,5 +1,5 @@
 @extends('admin.layout.master')
-@section('title', 'Admin - danh sách tin về game')
+@section('title', 'Admin - danh sách tin về new')
 @section('content')
 
 	<section id="main-content">
@@ -14,7 +14,7 @@
 					</div>
                   	@endif
 
-                      <div class="panel-heading"><b>Danh sách các tin về game</b>
+                      <div class="panel-heading"><b>Danh sách các tin về new</b>
                       </div>
                       <div class="panel-body">
                           
@@ -24,6 +24,7 @@
 				                <th>STT</th>
 				                <th>Tiêu đề</th>
 				                <th>Tóm tắt</th>
+				                <th>Hình</th>
 				                <th>Ngày đăng</th>
 				                <th>Xóa</th>
 				                <th>Cập nhật</th>
@@ -34,6 +35,7 @@
 				                <th>STT</th>
 				                <th>Tiêu đề</th>
 				                <th>Tóm tắt</th>
+				                <th>Hình</th>
 				                <th>Ngày đăng</th>
 				                <th>Xóa</th>
 				                <th>Cập nhật</th>
@@ -41,6 +43,21 @@
 				        </tfoot>
 				        
 					<!-- Copy day nha -->
+					<tbody>					
+						<?php $stt = 1; ?>
+						@foreach ($news as $new)
+						<tr>
+							<td>{{ $stt }}</td>
+							<td>{{ $new->title }}</td>
+							<td>{{ ($new->description) }}</td>
+							<td><img height="100px" src="adminAssets/img/hinh_tin/{{ $new->image }}" alt=""></td>
+							<td>{{ $new->update_at }}</td>
+							<td width="80px" style="font-size: 25px" class="text-center"><a onclick="return XacNhanXoa('Bạn có chắc muốn xóa?')" href="admin/news/xoa/{{ $new->id }}"><i class="fa fa-trash-o fa-fw"></i></a></td>
+							<td width="80px" style="font-size: 25px" class="text-center"><a href="admin/news/sua/{{ $new->id }}"><i class="fa fa-pencil fa-fw"></i></a></td>
+						</tr>
+						<?php $stt++; ?>
+						@endforeach
+					</tbody>
 				        
 				    </table>
 

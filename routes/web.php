@@ -70,4 +70,36 @@ Route::group(['prefix'=>'admin'],function(){
         Route::get('sua/{id}', 'LinkDownloadController@getSua');
         Route::post('sua/{id}', 'LinkDownloadController@postSua');
     });
+
+    Route::group(['prefix'=>'news'],function(){
+        
+        Route::get('danhsach', 'NewsController@getDanhSach')->name('DanhSachTinTuc');
+
+        Route::get('them', 'NewsController@getThem')->name('ThemTinTuc');
+        Route::post('them', 'NewsController@postThem');
+
+        Route::get('xoa/{id}', 'NewsController@getXoa');
+
+        Route::get('sua/{id}', 'NewsController@getSua');
+        Route::post('sua/{id}', 'NewsController@postSua');
+    });
+
+    Route::group(['prefix'=>'users'],function(){
+        
+        Route::get('danhsach', 'UsersController@getDanhSach')->name('DanhSachNguoiQuanTri');
+
+        Route::get('them', 'UsersController@getThem')->name('ThemNguoiQuanTri');
+        Route::post('them', 'UsersController@postThem');
+
+        Route::get('xoa/{id}', 'UsersController@getXoa');
+
+        Route::get('sua/{id}', 'UsersController@getSua');
+        Route::post('sua/{id}', 'UsersController@postSua');
+    });
+
+    Route::group(['prefix'=>'comments'],function(){
+        
+        Route::get('danhsach', 'CommentsController@getDanhSach')->name('DanhSachBinhLuan');
+        Route::get('xoa/{id}', 'CommentsController@getXoa');
+    });
 });

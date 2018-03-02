@@ -60,8 +60,8 @@
                           <span>Tin tức</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="{{ route('ThemGames') }}">Thêm tin tức</a></li>
-                          <li><a  href="{{ route('DanhSachGames') }}">Danh sách tin tức</a></li>
+                          <li><a  href="{{ route('ThemTinTuc') }}">Thêm tin tức</a></li>
+                          <li><a  href="{{ route('DanhSachTinTuc') }}">Danh sách tin tức</a></li>
                       </ul>
                   </li>
 
@@ -71,13 +71,13 @@
                           <span>Người quản trị</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="{{ route('ThemGames') }}">Thêm người quản trị</a></li>
-                          <li><a  href="{{ route('DanhSachGames') }}">Danh sách người quản trị</a></li>
+                          <li><a  href="{{ route('ThemNguoiQuanTri') }}">Thêm người quản trị</a></li>
+                          <li><a  href="{{ route('DanhSachNguoiQuanTri') }}">Danh sách người quản trị</a></li>
                       </ul>
                   </li>
 
                   <li>
-                      <a href="{{ route('ThongTinAdmin') }}">
+                      <a href="{{ route('DanhSachBinhLuan') }}">
                           <i class="fa fa-comments"></i>
                           <span>Bình luận</span>
                       </a>

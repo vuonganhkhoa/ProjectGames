@@ -39,6 +39,21 @@
 				        </tfoot>
 				        
 						<!-- Copy nha -->
+						<tbody>
+							
+							<?php $stt = 1; ?>
+							@foreach ($comments as $comment)
+				            <tr>
+				                <td>{{ $stt }}</td>
+				                <td>{{ $comment->game->title }}</td>
+				                <td>{{ ($comment->content) }}</td>
+				                <td>{{ $comment->update_at }}</td>
+				                <td width="80px" style="font-size: 25px" class="text-center"><a onclick="return XacNhanXoa('Bạn có chắc muốn xóa?')" href="admin/comments/xoa/{{ $comment->id }}"><i class="fa fa-trash-o fa-fw"></i></a></td>
+				            </tr>
+				            <?php $stt++; ?>
+							@endforeach
+
+				        </tbody>
 
 				    </table>
 

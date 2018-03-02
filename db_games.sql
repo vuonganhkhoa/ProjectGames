@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 01, 2018 at 05:07 PM
+-- Generation Time: Mar 02, 2018 at 04:47 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -70,7 +70,15 @@ CREATE TABLE IF NOT EXISTS `game_comments` (
   `update_at` date NOT NULL,
   PRIMARY KEY (`id`),
   KEY `game_id` (`game_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `game_comments`
+--
+
+INSERT INTO `game_comments` (`id`, `game_id`, `name`, `email`, `content`, `update_at`) VALUES
+(1, 1, 'Hương', 'Huong@gmail.com', 'Tựa game này rất hay.', '2018-03-01'),
+(3, 1, 'Hoa', 'SaoMi@gmail.com', 'Masterpiece!', '2018-03-02');
 
 -- --------------------------------------------------------
 
@@ -154,15 +162,22 @@ INSERT INTO `link_download` (`id`, `game_id`, `link`, `note`, `status`) VALUES
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE IF NOT EXISTS `news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(100) NOT NULL,
-  `url` varchar(100) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `content` longtext NOT NULL,
   `image` varchar(255) NOT NULL,
   `view` int(11) NOT NULL,
   `update_at` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `title`, `url`, `description`, `content`, `image`, `view`, `update_at`) VALUES
+(2, 'The Blackout Club - Game kinh dị bắt bạn sinh tồn trong thị trấn ma quỷ hứa hẹn sẽ là bom tấn trong năm 2019', 'the-blackout-club---game-kinh-di-bat-ban-sinh-ton-trong-thi-tran-ma-quy-hua-hen-se-la-bom-tan-trong-nam-2019', '<h2>The Blackout Club l&agrave; một tựa game nhập vai h&agrave;nh động kinh dị với khả năng cho ph&eacute;p 4 game thủ c&ugrave;ng thưởng thức trong chế độ Coop</h2>', '<p>Trong The Blackout Club, nh&acirc;n vật ch&iacute;nh l&agrave; v&agrave;i đứa trẻ tuổi teen bất ngờ thức dậy ở một thị trấn kỳ dị, người lấm lem b&ugrave;n đất v&agrave; chẳng nhớ v&igrave; sao m&igrave;nh lại lưu lạc được đến tận đ&acirc;y. Ph&iacute;a dưới l&ograve;ng đất, một con qu&aacute;i vật kinh khủng đang ẩn m&igrave;nh chờ cơ hội tấn c&ocirc;ng, c&ograve;n đ&aacute;m trẻ th&igrave; phải đi t&igrave;m một người bạn bị mất t&iacute;ch tại đ&acirc;y. V&agrave; rồi trong qu&aacute; tr&igrave;nh ho&agrave;n th&agrave;nh nhiệm vụ m&agrave; game đưa ra, người chơi phải tự m&igrave;nh kh&aacute;m ph&aacute; những đường hầm d&agrave;i v&ocirc; tận b&ecirc;n dưới thị trấn to&agrave;n qu&aacute;i vật n&agrave;y, v&agrave; c&ugrave;ng l&uacute;c kh&aacute;m ph&aacute; ra những &acirc;m mưu li&ecirc;n quan tới ch&iacute;nh những người lớn ch&uacute;ng ch&agrave;o hỏi v&agrave; tr&ograve; chuyện h&agrave;ng ng&agrave;y ở nh&agrave;.</p>\r\n\r\n<p><img alt=\"The Blackout Club - Game kinh dị bắt bạn sinh tồn trong thị trấn ma quỷ hứa hẹn sẽ là bom tấn trong năm 2019\" id=\"img_a834d610-1df8-11e8-829c-91192b3366eb\" src=\"https://genknews.genkcdn.vn/thumb_w/640/2018/3/2/eaep9tqfuleik8q7e3fnlm-650-80-15199814456671934710741.png\" /></p>\r\n\r\n<p>Đ&acirc;y l&agrave; một tựa game nhập vai h&agrave;nh động với khả năng cho ph&eacute;p 4 game thủ c&ugrave;ng thưởng thức trong chế độ Coop. V&agrave; kh&ocirc;ng chỉ n&eacute; tr&aacute;nh hoặc chiến đấu với những con qu&aacute;i vật, bạn c&ograve;n phải ghi lại những điều kinh ho&agrave;ng đang xảy ra ở đ&acirc;y, vốn sở hữu một cốt truyện với từng nhiệm vụ phơi b&agrave;y một c&aacute;ch v&ocirc; c&ugrave;ng ấn tượng, khiến bạn lu&ocirc;n ở trong trạng th&aacute;i hoang mang, kh&ocirc;ng biết c&oacute; n&ecirc;n dấn th&acirc;n tiếp hay kh&ocirc;ng.</p>\r\n\r\n<p><img alt=\"The Blackout Club - Game kinh dị bắt bạn sinh tồn trong thị trấn ma quỷ hứa hẹn sẽ là bom tấn trong năm 2019\" id=\"img_a8441850-1df8-11e8-829c-91192b3366eb\" src=\"https://genknews.genkcdn.vn/thumb_w/640/2018/3/2/whihx3fxywwcbucr9dd7nb-650-80-15199814456682131752794.png\" /></p>\r\n\r\n<p>Chế độ chơi đơn l&agrave; thứ giới thiệu người chơi đến với cốt truyện kinh ho&agrave;ng m&agrave; những nh&agrave; l&agrave;m game từng đảm tr&aacute;ch Bioshock huyền thoại tạo ra, với những nh&aacute;nh cốt truyện kh&ocirc;ng tuyến t&iacute;nh một ch&uacute;t n&agrave;o, cho ph&eacute;p người chơi tự kể lại cuộc h&agrave;nh tr&igrave;nh kinh dị của m&igrave;nh trong The Blackout Club kh&ocirc;ng giống với bất kỳ ai kh&aacute;c thưởng thức tựa game.</p>\r\n\r\n<p><img alt=\"The Blackout Club - Game kinh dị bắt bạn sinh tồn trong thị trấn ma quỷ hứa hẹn sẽ là bom tấn trong năm 2019\" id=\"img_a857c760-1df8-11e8-829c-91192b3366eb\" src=\"https://genknews.genkcdn.vn/thumb_w/640/2018/3/2/yyj25yoakehwb9fntxtexz-650-80-1519981445666220816305.png\" /></p>\r\n\r\n<p>Bản th&acirc;n c&aacute;i t&ecirc;n của tựa game cũng h&eacute; lộ nhiều điều. The Blackout Club vừa l&agrave; t&ecirc;n của nh&oacute;m bạn trẻ trong game l&ecirc;n đường t&igrave;m người bạn &quot;h&agrave;ng x&oacute;m&quot;, nhưng cũng m&ocirc; tả bản chất của thị trấn ma &aacute;m kia: Kh&ocirc;ng s&oacute;ng điện thoại, kh&ocirc;ng c&oacute; internet, kh&ocirc;ng c&oacute; bất cứ thứ g&igrave; kết nối với thế giới b&ecirc;n ngo&agrave;i, v&igrave; thế việc tiết lộ những b&iacute; mật động trời b&ecirc;n trong xứ sở n&agrave;y kh&ocirc;ng dễ như việc giơ điện thoại l&ecirc;n livestream tr&ecirc;n YouTube.</p>\r\n\r\n<p><img alt=\"The Blackout Club - Game kinh dị bắt bạn sinh tồn trong thị trấn ma quỷ hứa hẹn sẽ là bom tấn trong năm 2019\" id=\"img_a81f7950-1df8-11e8-829c-91192b3366eb\" src=\"https://genknews.genkcdn.vn/thumb_w/640/2018/3/2/4tr2hwfmmwt7lvfnt8mmbj-650-80-15199814456671672397351.png\" /></p>\r\n\r\n<p>N&oacute;i đến qu&aacute;i vật, The Blackout Club c&oacute; lẽ sẽ kh&ocirc;ng thể c&aacute;c fan của d&ograve;ng game kinh dị phải thất vọng một ch&uacute;t n&agrave;o cả. Từ những con qu&aacute;i t&ecirc;n l&agrave; Lucid, cho đến những kẻ &quot;mộng du&quot; Sleepwalkers. Đ&aacute;ng sợ hơn cả, những con qu&aacute;i vật n&agrave;y đều l&agrave; những người lớn từng rất th&acirc;n quen với nh&oacute;m nh&acirc;n vật ch&iacute;nh. Họ c&oacute; thể l&agrave; thầy gi&aacute;o, cha mẹ hay những người bạn của gia đ&igrave;nh đ&aacute;m nhỏ, bị nhập v&agrave; h&agrave;nh xử kh&ocirc;ng theo &yacute; muốn của m&igrave;nh.</p>\r\n\r\n<p>Kh&ocirc;ng phải cứ muốn hạ gục qu&aacute;i vật l&agrave; dễ d&agrave;ng, v&igrave; để hạ gục ch&uacute;ng, c&aacute;i gi&aacute; m&agrave; người chơi phải trả đ&ocirc;i l&uacute;c l&agrave; rất đắt. Ch&iacute;nh v&igrave; thế cơ chế gameplay h&agrave;nh động b&iacute; mật được l&ecirc;n ng&ocirc;i v&agrave; tạo ra trải nghiệm ho&agrave;n hảo nhất cho những người thưởng thức. Dự kiến, The Blackout Club sẽ ch&iacute;nh thức ra mắt v&agrave;o qu&yacute; 1 năm 2019 tới đ&acirc;y.</p>', '1520008519whihx3fxywwcbucr9dd7nb-650-80-15199814456682131752794.png', 0, '2018-03-02');
 
 -- --------------------------------------------------------
 
