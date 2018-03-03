@@ -54,6 +54,26 @@
 				        </tfoot>
 				        
 						<!-- Copy day nha -->
+						<tbody>
+							
+							<?php $stt = 1; ?>
+							@foreach ($users as $user)
+				            <tr>
+				                <td>{{ $stt }}</td>
+				                <td><img height="100px" src="adminAssets/img/photos/{{ $user->image }}"></td>
+				                <td>{{ $user->fullname }}</td>
+				                <td>{{ date('d/m/Y', strtotime($user->birthdate)) }}</td>
+				                <td>{{ $user->gender }}</td>
+				                <td>{{ $user->email }}</td>
+				                <td>{{ $user->phone }}</td>
+				                <td>{{ $user->role }}</td>
+				                <td width="80px" style="font-size: 25px" class="text-center"><a onclick="return XacNhanXoa('Bạn có chắc muốn xóa?')" href="admin/users/xoa/{{ $user->id }}"><i class="fa fa-trash-o fa-fw"></i></a></td>
+				                <td width="80px" style="font-size: 25px" class="text-center"><a href="admin/users/sua/{{ $user->id }}"><i class="fa fa-pencil fa-fw"></i></a></td>
+				            </tr>
+				            <?php $stt++; ?>
+							@endforeach
+
+				        </tbody>
 
 				    </table>
 

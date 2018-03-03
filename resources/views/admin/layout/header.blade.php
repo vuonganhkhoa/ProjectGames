@@ -15,13 +15,13 @@
                     <!-- user login dropdown start-->
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img alt="" src="" height="40px">
+                            <img alt="" src="adminAssets/img/photos/{{ Auth::user()->image }}" height="40px">
                             <span class="username">Admin</span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout" style="width: 160px !important">
                             <div class="log-arrow-up"></div>
-                            <li><a href=""><i class="fa fa-key"></i> Đăng xuất</a></li>
+                            <li><a href="{{ route('DangXuat') }}"><i class="fa fa-key"></i> Đăng xuất</a></li>
                         </ul>
                     </li>
                     <!-- user login dropdown end -->

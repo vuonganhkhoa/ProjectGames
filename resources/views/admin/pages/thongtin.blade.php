@@ -12,7 +12,7 @@
                       <div class="panel-body">
                       
                       <div class="col-md-4">
-                        <img src="" height="200px" style="margin-top: 50px !important; border-radius: 100%">
+                        <img src="adminAssets/img/photos/{{ Auth::user()->image }}" height="200px" style="margin-top: 50px !important; border-radius: 100%">
                       </div>
                       <div class="col-md-8">
                         <table class="table">
@@ -20,23 +20,23 @@
                         <tbody>
                           <tr>
                             <td>Họ và tên</td>
-                            <td>a</td>
+                            <td>{{ Auth::user()->fullname }}</td>
                           </tr>
                           <tr>
                             <td>Ngày sinh</td>
-                            <td>a</td>
+                            <td>{{ Auth::user()->birthdate }}</td>
                           </tr>
                           <tr>
                             <td>Email</td>
-                            <td>a</td>
+                            <td>{{ Auth::user()->email }}</td>
                           </tr>
                           <tr>
                             <td>Địa chỉ</td>
-                            <td>a</td>
+                            <td>{{ Auth::user()->address }}</td>
                           </tr>
                           <tr>
                             <td>Số điện thoại</td>
-                            <td>a</td>
+                            <td>{{ Auth::user()->phone }}</td>
                           </tr>
                           
                         </tbody>

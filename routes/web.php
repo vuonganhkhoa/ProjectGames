@@ -10,12 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+# Fontend
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix'=>'admin'],function(){
+# Dang Nhap - Dang Xuat
+Route::get('login', 'AdminController@getLogin')->name('DangNhap');
+Route::post('login', 'AdminController@postLogin');
+Route::get('logout', 'AdminController@getLogout')->name('DangXuat');
+
+# Admin - Backend
+Route::group(['prefix'=>'admin', 'middleware'=>'login'],function(){
 
 	Route::get('', 'GamesController@getThongTin')->name('ThongTinAdmin');
 
