@@ -1,0 +1,107 @@
+*{
+	font-family: Helvetica, Arial, Tahoma, sans-serif !important;
+	text-transform: none;
+}
+
+.container span{
+	font-size: 16px;
+	color: black;
+}
+
+.TimKiem h4{
+	font-size: 16px;
+	font-weight: none;
+}
+/* header{
+	 background-color: #121212; 
+
+} */
+
+/* .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+} */
+
+.navbar .navbar-nav a{
+	font-size: 16px;
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	text-transform: none;
+}
+
+.navbar .navbar-nav a:hover{
+	color: #EB4C49;
+}
+
+.bg-color-sky-light .content-md{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+
+.dropdown-menu {
+	min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+  	margin: 0px;
+  	padding: 0px;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: black;
+	white-space: normal;
+	padding: 10px 30px;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+
+.navbar-nav .nav-item input[type=text] {
+    width: 400px;
+    border: 0px solid #ccc;
+    font-size: 16px;
+    background-color: white;
+    padding-left: 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-transform: none;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.navbar-nav .nav-item input[type=text]:focus {
+   /*  width: 100%; */
+}
+
+
+.comments-list .user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}

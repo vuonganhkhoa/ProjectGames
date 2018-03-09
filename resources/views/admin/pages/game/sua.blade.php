@@ -92,12 +92,14 @@
                               <div class="form-group ">
                                 <label class="control-label">Cấu hình tối thiểu</label>
                                 <textarea id="demo" class="form-control " rows="6" name="CauHinhToiThieu" id="CauHinhToiThieu">{{ $game->minimum }}</textarea>
+                                <script type="text/javascript">CKEDITOR.replace( 'CauHinhToiThieu' );</script>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group ">
                                 <label class="control-label">Cấu hình đề nghị</label>
                                 <textarea id="demo" class="form-control " rows="6" name="CauHinhDeNghi" id="CauHinhDeNghi">{{ $game->recommended }}</textarea>
+                                <script type="text/javascript">CKEDITOR.replace( 'CauHinhDeNghi' );</script>
                               </div>
                             </div>
                           </div>

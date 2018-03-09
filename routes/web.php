@@ -10,10 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-# Fontend
-Route::get('/', function () {
-    return view('welcome');
-});
+# Frontend
+Route::get('/', 'PagesController@getTrangChu')->name('TrangChu');
+
+Route::get('lien-he', 'PagesController@getLienHe')->name('LienHe');
+Route::post('lien-he', 'PagesController@postLienHe');
+
+Route::get('tin-tuc', 'PagesController@getTinTuc')->name('TinTuc');
+Route::get('tin-tuc/{url}', 'PagesController@getChiTietTinTuc')->name('ChiTietTinTuc');
+
+Route::get('gioi-thieu', 'PagesController@getGioiThieu')->name('GioiThieu');
+
+Route::get('games', 'PagesController@getGames')->name('Games');
+Route::get('games/{url}', 'PagesController@getChiTietGames');
+Route::get('the-loai/{url}', 'PagesController@getTheLoai');
+
+Route::post('binhluan/{id}', 'PagesController@postBinhLuan');
+
+Route::get('timkiem', 'PagesController@getTimKiem');
 
 # Dang Nhap - Dang Xuat
 Route::get('login', 'AdminController@getLogin')->name('DangNhap');
