@@ -38,7 +38,7 @@
 	<div class="content-md container">
 		<div class="row margin-b-40">
 			<div class="col-sm-6">
-				<h2><a href="">Tin tức</a></h2>
+				<h2><a href="{{ route('TinTuc') }}">Tin tức</a></h2>
 			</div>
 		</div>
 		<!--// end row -->

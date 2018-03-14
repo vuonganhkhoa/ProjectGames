@@ -121,24 +121,51 @@
 			<!-- Team -->
 			<div class="col-sm-4 sm-margin-b-50">
 				<h4><a href="#">Vương Anh Khoa</a></h4>
-				<p>Thêm, xóa, sửa admin - games</p>
-				<p>Thêm, xóa, sửa admin - games</p>
+				<p>Tìm và cắt giao diện backtend</p>
+				<br>
+				<p class="in-dam">Backend Thêm/Xoá/Sửa :</p>
+				<p>Game</p>
+				<p>Hình game</p>
+				<p>Người quản trị</p>
+				<br>
+				<p class="in-dam">Frontend đổ dữ liệu trang :</p>
+				<p>Trang game</p>
+				<p>Trang chi tiết game</p>
+				<br>
+				<p>Chức năng bình luận của người dùng</p>
+				<p>Tìm kiếm</p>
+
 			</div>
 			<!-- End Team -->
 
 			<!-- Team -->
 			<div class="col-sm-4 sm-margin-b-50">
 				<h4><a href="#">Thi Trường Minh</a></h4>
-				<p>Thêm, xóa, sửa admin - Thể loại game</p>
-				<p>Thêm, xóa, sửa admin - Bình luận </p>
+				<p>Tìm và cắt giao diện frontend</p>
+				<br>
+				<p class="in-dam">Backend Thêm/Xoá/Sửa :</p>
+				<p>Thể loại game</p>
+				<p>Link Download game</p>
+				<p>Tin tức</p>
+				<br>
+				<p class="in-dam">Frontend đổ dữ liệu trang :</p>
+				<p>Trang chủ</p>
+				<p>Trang tin tức</p>
+				<p>Trang chi tiết tin tức</p>
 			</div>
 			<!-- End Team -->
 
 			<!-- Team -->
 			<div class="col-sm-4 sm-margin-b-50">
 				<h4><a href="#">Võ Hoàng Sơn</a> </h4>
-				<p>Thêm, xóa, sửa admin/games</p>
-				<p>Thêm, xóa, sửa admin/games</p>
+				<p>Tìm và cắt giao diện frontend, backend</p>
+				<br>
+				<p class="in-dam">Database :</p>
+				<p>Thiết kế Database</p>
+				<p>Thêm dữ liệu Database</p>
+				<br>
+				<p class="in-dam">Frontend đổ dữ liệu trang :</p>
+				<p>Trang liên hệ</p>
 			</div>
 			<!-- End Team -->
 		</div>

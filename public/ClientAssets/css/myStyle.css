@@ -12,6 +12,13 @@
 	font-size: 16px;
 	font-weight: none;
 }
+
+.bg-color-sky-light .col-sm-4 p{
+	color: black !important;
+}
+.bg-color-sky-light .col-sm-4 .in-dam{
+	font-weight: bold !important;
+}
 /* header{
 	 background-color: #121212; 
 
