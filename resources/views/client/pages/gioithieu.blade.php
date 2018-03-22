@@ -159,6 +159,7 @@
 			<div class="col-sm-4 sm-margin-b-50">
 				<h4><a href="#">Võ Hoàng Sơn</a> </h4>
 				<p>Tìm và cắt giao diện frontend, backend</p>
+				<p>Tester</p>
 				<br>
 				<p class="in-dam">Database :</p>
 				<p>Thiết kế Database</p>
@@ -181,7 +182,7 @@
 	<div class="content-md container">
 		<div class="row margin-b-40">
 			<div class="col-sm-6">
-				<h2>File báo cáo </h2><a href=""> Download</a>
+				<h2>File báo cáo </h2><a target="_blank" href="https://drive.google.com/file/d/1bYa2MRStawaOnnj982oHRU9Egf6B1kTA/view?usp=sharing"> Download</a>
 			</div>
 		</div>
 	</div>
